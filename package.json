@@ -1,0 +1,14 @@
+{
+  "name": "reactproject",
+  "version": "1.0.0",
+  "description": "a simple react project using typescript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "stephen burns",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.9.5"
+  }
+}
