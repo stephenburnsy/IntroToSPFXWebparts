@@ -1,6 +1,6 @@
 ## react-project
 
-This is where you include your WebPart documentation.
+This will be a quick folder of some simple react webparts.
 
 ### Building the code
 
@@ -18,6 +18,9 @@ This package produces the following:
 * deploy/* - all resources which should be uploaded to a CDN.
 
 ### Build options
+
+Added Jest testing framework
+Npm run jest
 
 gulp clean - TODO
 gulp test - TODO
