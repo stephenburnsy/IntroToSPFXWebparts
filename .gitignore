@@ -6,6 +6,7 @@ npm-debug.log*
 # Dependency directories
 node_modules
 .vscode/
+jest/
 # Build generated files
 dist
 lib

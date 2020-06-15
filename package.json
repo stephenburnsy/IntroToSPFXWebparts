@@ -3,13 +3,52 @@
   "version": "0.0.1",
   "private": true,
   "main": "lib/index.js",
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>config/setupEnzyme.ts"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "testMatch": [
+      "**/tests/**/*.test.+(ts|tsx|js)"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less|scs|sass)$": "identity-obj-proxy"
+    },
+    "collectCoverage": true,
+    "coverageReporters": [
+      "json",
+      "csv",
+      "text",
+      "cobertura"
+    ],
+    "coverageDirectory": "<rootDir>/jest",
+    "reporters": [
+      "default"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 75,
+        "functions": 75,
+        "lines": 75,
+        "statements": 75
+      }
+    }
+  },
   "engines": {
     "node": ">=0.10.0"
   },
   "scripts": {
     "build": "gulp bundle",
     "clean": "gulp clean",
-    "test": "gulp test"
+    "test": "gulp test",
+    "jest": "jest"
   },
   "dependencies": {
     "react": "16.8.5",
@@ -35,8 +74,15 @@
     "@microsoft/sp-tslint-rules": "1.10.0",
     "@microsoft/sp-webpart-workbench": "1.10.0",
     "@types/chai": "3.4.34",
+    "@types/enzyme": "^3.10.5",
+    "@types/jest": "^26.0.0",
     "@types/mocha": "2.2.38",
     "ajv": "~5.2.2",
-    "gulp": "^3.9.1"
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "gulp": "^3.9.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.0.1",
+    "ts-jest": "^26.1.0"
   }
 }
