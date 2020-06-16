@@ -1,8 +1,8 @@
 import * as React from 'react';
 // Could do this and have the props as an interface..
 export interface buttonProps {
-    onClick?:()=>{},
-    onKeyDown?:()=>{},
+    onClick?:()=>void,
+    onKeyDown?:()=>void,
     text: string,
     hidden?:boolean,
     ariaLabel?:string,

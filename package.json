@@ -24,7 +24,6 @@
     "collectCoverage": true,
     "coverageReporters": [
       "json",
-      "csv",
       "text",
       "cobertura"
     ],
